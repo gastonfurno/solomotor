@@ -50,13 +50,20 @@
     text-align: center;
     padding-top: 1%;
 }
+.tituloindex{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #0077B6;
+    color: aliceblue;
+    text-align: center;
+}
 .contenedor{
-    width: 100%;
     display:flex;
     justify-content: center;
     margin-top: 25px;
     margin-bottom: 25px;
     }
+
 .contenedor a{
     text-decoration: none;
     color: black;
@@ -87,6 +94,20 @@
         transform: scale(1.05);
         box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
     }
+    .contenedor .noticia1 h2:hover{
+        color: #0077B6;
+    }
+
+.contenedor .marcasdestacasindex{
+    width: 20%;
+    margin: 1rem;
+}
+
+.contenedor .vehiculosdestacadosindex{
+    width: 25%;
+    margin:1rem
+    
+}
 
 .contenedor .marca{
     align-items: center;
