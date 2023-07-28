@@ -1,0 +1,120 @@
+header {
+  background-color: #242f40;
+  justify-content: space-between;
+  display: flex;
+  padding: 0.5rem;
+}
+header h1 a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+}
+header #abrir-menu {
+  display: none;
+}
+header #cerrar-menu {
+  display: none;
+}
+header .navbar li {
+  list-style: none;
+  margin: 20px;
+  display: inline-block;
+  color: aliceblue;
+  transition: all 300ms;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .navbar li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+header .navbar li a:hover {
+  color: #CCA43B;
+  transform: scale(1.5);
+}
+header .navbar li:hover {
+  transform: scale(1.5);
+}
+
+.tituloindex {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #0077B6;
+  color: aliceblue;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.contenedor a {
+  text-decoration: none;
+  color: black;
+}
+.contenedor img {
+  width: 100%;
+  border-radius: 15px;
+}
+.contenedor .noticia1 {
+  width: 23%;
+  border-radius: 15px;
+  margin: 1.5rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: all 300ms;
+}
+.contenedor .noticia1 a {
+  text-decoration: none;
+  color: black;
+}
+.contenedor .noticia1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.contenedor .noticia1 h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.contenedor .noticia1 h2:hover {
+  color: #0077B6;
+}
+.contenedor .noticia1 p {
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.contenedor .noticia1:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.contenedor .marcasdestacasindex {
+  width: 20%;
+  margin: 1rem;
+}
+.contenedor.vehiculosdestacadosindex {
+  width: 25%;
+  margin: 1rem;
+}
+.contenedor.vehiculosdestacadosindex img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  background-color: #242f40;
+  color: aliceblue;
+}
+.footer.piepag {
+  width: 100%;
+  list-style: none;
+}
+.footer.piepagli {
+  padding: 15px;
+  padding-left: 25px;
+}/*# sourceMappingURL=estilo.css.map */
