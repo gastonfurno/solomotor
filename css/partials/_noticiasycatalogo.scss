@@ -125,6 +125,7 @@
 }
 
 .seccionartdest{
+    height: 100%;
     margin-top: 2rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -147,7 +148,7 @@
     }
     }
 
-@media screen and (max-width:950px){
+@media screen and (max-width:750px){
        
     .contenedor{
         width: 100%;
@@ -176,7 +177,28 @@
                 }   
 
                 }
+
+        & .marca {
+            width: 200px;
+            text-align: center;
+            
+            & img{
+                width: 200px;
+            }       
         }
         
 }        
- 
+} 
+
+@media screen and (max-width:550px){
+
+    .contenedor .marca{
+        width: 150px;
+        text-align: center;
+        
+        & img{
+            width: 150px;
+        }       
+    }
+    
+}     
