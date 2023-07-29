@@ -1,0 +1,130 @@
+.contacto{
+    width: 90%;
+    max-width: 1000px;
+    padding: 50px;
+    margin:6% auto;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+    background-color: #242f40;
+    color: azure;
+    border-radius: 10px;
+
+        & h2{
+            font-size: 40px;
+            font-weight:600px ;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+
+    & .contactoform{
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+
+        & .info,
+        & .formulario{ 
+            width: 50%;
+        }
+
+        & .info{
+            padding-left: 10px;
+            
+                & .datos{
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    align-items: center;
+                    flex-wrap: nowrap;
+
+                        & h3{
+                            font-size: 25px;
+                            }
+
+                        & a{
+                            margin: 5px;
+                            }
+                }
+
+        }
+            &.formulario{
+            padding-left: 10px; 
+            }
+         
+                & input,
+                & textarea{
+                    width: 100%;
+                    margin-bottom: 15px;
+                    padding:12px 20px ;
+                    border: 1px solid #999;
+                    color:#999;
+                    font-weight: 400;
+                    outline: 0;
+                }
+                & textarea{
+                max-width: 100%;
+                min-width: 100%;
+                max-height: 200px;
+                min-height: 150px;
+                }
+            
+                & button{
+                padding: 12px 30px;
+                border: transparent;
+                border-radius: 10px;
+                background-color: #15cf8a;
+                color:azure;
+                float: right ;
+                cursor: pointer;
+             }  
+        }
+    }
+
+
+.quienes{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+        
+    & .titulos{
+            width: 90%;
+            text-align: center;
+            margin: 0.5rem;
+       
+        }
+
+        & h2{
+            font-size: 35x;
+            margin-bottom: 15px;
+        }
+
+        & p{
+            width: 50%;
+            margin: 20px;
+            padding-bottom: 4.5rem;
+        }
+}
+
+
+
+@media screen and (max-width:950px){
+.quienes {
+    height: 100%;
+   }  
+
+}
+
+@media screen and (max-width:550px) {
+.datos {
+
+ & h4{
+    display: none;
+    }
+
+    & img{
+    display: none;
+    }
+}
+}

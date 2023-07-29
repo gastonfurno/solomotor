@@ -1,0 +1,30 @@
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    background-color: #242f40;
+    color:aliceblue;
+}
+    
+    .piepag{
+        width: 100%;
+       list-style: none;
+        
+        & li {
+            padding: 15px;
+            padding-left: 25px;
+           
+        }
+    }
+  
+@media screen and (max-width:600px) {
+        ul:last-child{
+            display: none;
+        }   
+     } 
+     
+@media screen and (max-width:550px) { 
+     .piepag img{
+        width: 30px;
+    }
+}

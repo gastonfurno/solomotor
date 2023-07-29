@@ -44,3 +44,60 @@ header{
     }  
 }
 
+@media screen and (max-width:950px) {
+    header{
+        padding:1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #242f40;
+
+        & #abrir-menu{
+            display: block;
+            width: 2.5rem;
+            border-radius: 0.5rem;
+        }
+
+        & #cerrar-menu {
+            display: block;
+            width: 2.3rem;
+            position: absolute;
+            top:1.2rem;
+            right: 1rem;
+            }
+
+         & .navbar{
+            display: none;
+            padding-left: 0;
+
+            &.active{
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                right: 0;
+                top:0;
+                background-color: #242f40;
+                width: 40%;
+                min-height: 100vh;
+                padding-left: 2.5rem;
+                padding-top: 3.5rem;
+                box-shadow: 0 0 0 100vmax rgba(0,0,0,0.2);
+             }
+
+            & li:hover{
+                transform:none;
+            } 
+        }   
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+   
+    h1 a{
+        font-size: 1.5rem;
+    }
+    .navbar.active{
+        padding-left: 1.5rem;
+    }
+} 

@@ -1,0 +1,119 @@
+.contenedormarca{
+    width: 100%;
+    display: grid;
+    gap:1.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "modelo1 modelo2 modelo3 modelo4"
+    "modelo5 modelo6 modelo7 modelo8"
+    "modelo9 modelo10 modelo11 modelo12"
+    "modelo13 modelo14 modelo15 modelo16"
+    "modelo17 modelo18 modelo19 modelo20";
+
+    & a{
+        text-decoration: none;
+    }
+
+    & img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    & h4{
+        padding: 1rem;
+        text-align: center;
+        color:#32373B;
+
+        &:hover{
+            color:#0077B6;
+        }
+    } 
+
+    & .modelo {
+        border-radius: 1rem;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    
+        & .modelo1 {
+            grid-area: modelo1;
+           
+        }
+        & .modelo2 {
+            grid-area: modelo2;
+            
+        }
+        & .modelo3 {
+            grid-area: modelo3;
+            
+        }
+        & .modelo4 {
+            grid-area: modelo4;
+            
+        }
+        & .modelo5 {
+            grid-area: modelo5;
+        }
+        & .modelo6 {
+            grid-area: modelo6;
+            
+        }
+        & .modelo7 {
+            grid-area: modelo7;
+            
+        }
+       & .modelo8 {
+            grid-area: modelo8;
+           
+        }
+        .modelo9 {
+            grid-area: modelo9;
+        }
+        & .modelo10 {
+            grid-area: modelo10;
+            
+            
+        }
+        & .modelo11 {
+            grid-area: modelo11;
+            
+        }
+        & .modelo12 {
+            grid-area: modelo12;
+            
+        }
+        & .modelo13 {
+            grid-area: modelo13;
+        }
+        & .modelo14 {
+            grid-area: modelo14;
+           
+        }
+         & .modelo15 {
+            grid-area: modelo15;
+            
+        }
+        & .modelo16 {
+            grid-area: modelo16;
+            
+        }
+        & .modelo17 {
+            grid-area: modelo17;
+           
+        }
+        & .modelo18 {
+            grid-area: modelo18;
+            
+        }
+        & .modelo19 {
+            grid-area: modelo19;
+            
+        }
+        & .modelo20 {
+            grid-area: modelo20;
+            
+        }
+    }
+}
+
+
