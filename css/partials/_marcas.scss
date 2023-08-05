@@ -117,3 +117,22 @@
 }
 
 
+@media screen and (max-width:640px){
+
+    .contenedormarca{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+    "modelo1 modelo2"
+    "modelo3 modelo4"
+    "modelo5 modelo6"
+    "modelo7 modelo8"
+    "modelo9 modelo10"
+    "modelo11 modelo12"
+    "modelo13 modelo14"
+    "modelo15 modelo16"
+    "modelo17 modelo18"
+    "modelo19 modelo20"
+    }
+}

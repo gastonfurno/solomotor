@@ -48,7 +48,6 @@ header .navbar li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #242f40;
   }
   header #abrir-menu {
     display: block;
@@ -223,6 +222,11 @@ header .navbar li:hover {
   padding-top: 1.5rem;
 }
 
+@media screen and (max-width: 870px) {
+  .seccionartdest {
+    display: none;
+  }
+}
 @media screen and (max-width: 750px) {
   .contenedor {
     width: 100%;
@@ -509,6 +513,14 @@ header .navbar li:hover {
   grid-area: modelo20;
 }
 
+@media screen and (max-width: 640px) {
+  .contenedormarca {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: "modelo1 modelo2" "modelo3 modelo4" "modelo5 modelo6" "modelo7 modelo8" "modelo9 modelo10" "modelo11 modelo12" "modelo13 modelo14" "modelo15 modelo16" "modelo17 modelo18" "modelo19 modelo20";
+  }
+}
 .descripcionmodelo {
   display: flex;
   flex-direction: column;
@@ -550,5 +562,8 @@ header .navbar li:hover {
 @media screen and (max-width: 600px) {
   ul:last-child {
     display: none;
+  }
+  .descripcionmodelo .carousel {
+    width: 300px;
   }
 }/*# sourceMappingURL=estilo.css.map */
