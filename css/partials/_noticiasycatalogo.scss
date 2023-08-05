@@ -43,8 +43,16 @@
                     &:hover{
                         color: #0077B6;
                     } 
+                }
 
+                & h4{
+                    text-align: center;
+                    margin-bottom: 1rem;
+                        &:hover{
+                            color: #0077B6;
+                        } 
                     }
+                    
 
                 & p{
                     margin-left: 15px;
@@ -79,7 +87,7 @@
                  width: 10%;
                 margin: 3%;
                  border-radius: 20px;
-                transition: all 300ms;;
+                transition: all 300ms;
                 
 
                  &:hover{
@@ -154,7 +162,6 @@
         width: 100%;
         display:flex;
         flex-direction: column;
-        justify-content: center;
         margin-top: 25px;
         margin-bottom: 25px;
         align-items: center;
@@ -192,13 +199,31 @@
 
 @media screen and (max-width:550px){
 
-    .contenedor .marca{
-        width: 150px;
-        text-align: center;
+    .contenedor {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        align-items: center;
+      
+            & .marca{
+            width: 150px;
+            text-align: center;
         
-        & img{
+            & img{
             width: 150px;
         }       
     }
-    
+    & .marcasdestacasindex {
+        width: 170px;
+
+         & img{
+            width: 170px;
+         }
+    }
+
 }     
+
+
+}
