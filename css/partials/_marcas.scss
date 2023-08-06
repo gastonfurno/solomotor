@@ -34,6 +34,8 @@
     & .modelo {
         border-radius: 1rem;
         box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+        -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     
         & .modelo1 {
             grid-area: modelo1;
@@ -116,6 +118,7 @@
     }
 }
 
+ @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
 
 @media screen and (max-width:640px){
 
@@ -136,3 +139,4 @@
     "modelo19 modelo20"
     }
 }
+
