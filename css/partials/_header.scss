@@ -43,7 +43,7 @@ header{
     }  
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:960px){
     header{
         padding:1rem;
         display: flex;
@@ -70,7 +70,7 @@ header{
             padding-left: 0;
 
             &.active{
-                display: flex;
+                display:block;
                 flex-direction: column;
                 position: fixed;
                 right: 0;
