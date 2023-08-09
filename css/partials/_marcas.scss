@@ -1,23 +1,21 @@
-.contenedormarca{
+.marcascontenedor{
     width: 100%;
     display: grid;
     gap:1.5rem;
     padding: 1rem;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
-    "modelo1 modelo2 modelo3 modelo4"
-    "modelo5 modelo6 modelo7 modelo8"
-    "modelo9 modelo10 modelo11 modelo12"
-    "modelo13 modelo14 modelo15 modelo16"
-    "modelo17 modelo18 modelo19 modelo20";
+    "marca1 marca2 marca3 marca4"
+    "marca5 marca6 marca7 marca8"
+    "marca9 marca10 marca11 marca12";
 
     & a{
         text-decoration: none;
     }
 
     & img{
-        width: 100%;
+        width: 50%;
         border-radius: 1rem;
     }
 
@@ -31,88 +29,58 @@
         }
     } 
 
-    & .modelo {
+    & .marca {
+        padding: 1rem;
+        text-align: center;
         border-radius: 1rem;
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
         -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
         animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     
-        & .modelo1 {
-            grid-area: modelo1;
+        & .marca1 {
+            grid-area: marca1;
            
         }
-        & .modelo2 {
-            grid-area: modelo2;
+        & .marca2 {
+            grid-area: marca2;
             
         }
-        & .modelo3 {
-            grid-area: modelo3;
+        & .marca3 {
+            grid-area: marca3;
             
         }
-        & .modelo4 {
-            grid-area: modelo4;
+        & .marca4 {
+            grid-area: marca4;
             
         }
-        & .modelo5 {
-            grid-area: modelo5;
+        & .marca5 {
+            grid-area: marca5;
         }
-        & .modelo6 {
-            grid-area: modelo6;
+        & .marca6 {
+            grid-area: marca6;
             
         }
-        & .modelo7 {
-            grid-area: modelo7;
+        & .marca7 {
+            grid-area: marca7;
             
         }
-       & .modelo8 {
-            grid-area: modelo8;
+       & .marca8 {
+            grid-area: marca8;
            
         }
-        .modelo9 {
-            grid-area: modelo9;
+        .marca9 {
+            grid-area: marca9;
         }
-        & .modelo10 {
-            grid-area: modelo10;
+        & .marca10 {
+            grid-area: marca10;
             
             
         }
-        & .modelo11 {
-            grid-area: modelo11;
+        & .marca11 {
+            grid-area: marca11;
             
         }
-        & .modelo12 {
-            grid-area: modelo12;
-            
-        }
-        & .modelo13 {
-            grid-area: modelo13;
-        }
-        & .modelo14 {
-            grid-area: modelo14;
-           
-        }
-         & .modelo15 {
-            grid-area: modelo15;
-            
-        }
-        & .modelo16 {
-            grid-area: modelo16;
-            
-        }
-        & .modelo17 {
-            grid-area: modelo17;
-           
-        }
-        & .modelo18 {
-            grid-area: modelo18;
-            
-        }
-        & .modelo19 {
-            grid-area: modelo19;
-            
-        }
-        & .modelo20 {
-            grid-area: modelo20;
+        & .marca12 {
+            grid-area: marca12;
             
         }
     }
@@ -122,21 +90,17 @@
 
 @media screen and (max-width:640px){
 
-    .contenedormarca{
+    .marca{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
-    "modelo1 modelo2"
-    "modelo3 modelo4"
-    "modelo5 modelo6"
-    "modelo7 modelo8"
-    "modelo9 modelo10"
-    "modelo11 modelo12"
-    "modelo13 modelo14"
-    "modelo15 modelo16"
-    "modelo17 modelo18"
-    "modelo19 modelo20"
+    "marca1 marca2"
+    "marca3 marca4"
+    "marca5 marca6"
+    "marca7 marca8"
+    "marca9 marca10"
+    "marca11 marca12"
     }
 }
 

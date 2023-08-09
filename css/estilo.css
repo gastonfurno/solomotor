@@ -427,94 +427,71 @@ header .navbar li:hover {
     display: none;
   }
 }
-.contenedormarca {
+.marcascontenedor {
   width: 100%;
   display: grid;
   gap: 1.5rem;
   padding: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "modelo1 modelo2 modelo3 modelo4" "modelo5 modelo6 modelo7 modelo8" "modelo9 modelo10 modelo11 modelo12" "modelo13 modelo14 modelo15 modelo16" "modelo17 modelo18 modelo19 modelo20";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "marca1 marca2 marca3 marca4" "marca5 marca6 marca7 marca8" "marca9 marca10 marca11 marca12";
 }
-.contenedormarca a {
+.marcascontenedor a {
   text-decoration: none;
 }
-.contenedormarca img {
-  width: 100%;
+.marcascontenedor img {
+  width: 50%;
   border-radius: 1rem;
 }
-.contenedormarca h4 {
+.marcascontenedor h4 {
   padding: 1rem;
   text-align: center;
   color: #32373B;
 }
-.contenedormarca h4:hover {
+.marcascontenedor h4:hover {
   color: #0077B6;
 }
-.contenedormarca .modelo {
+.marcascontenedor .marca {
+  padding: 1rem;
+  text-align: center;
   border-radius: 1rem;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.contenedormarca .modelo .modelo1 {
-  grid-area: modelo1;
+.marcascontenedor .marca .marca1 {
+  grid-area: marca1;
 }
-.contenedormarca .modelo .modelo2 {
-  grid-area: modelo2;
+.marcascontenedor .marca .marca2 {
+  grid-area: marca2;
 }
-.contenedormarca .modelo .modelo3 {
-  grid-area: modelo3;
+.marcascontenedor .marca .marca3 {
+  grid-area: marca3;
 }
-.contenedormarca .modelo .modelo4 {
-  grid-area: modelo4;
+.marcascontenedor .marca .marca4 {
+  grid-area: marca4;
 }
-.contenedormarca .modelo .modelo5 {
-  grid-area: modelo5;
+.marcascontenedor .marca .marca5 {
+  grid-area: marca5;
 }
-.contenedormarca .modelo .modelo6 {
-  grid-area: modelo6;
+.marcascontenedor .marca .marca6 {
+  grid-area: marca6;
 }
-.contenedormarca .modelo .modelo7 {
-  grid-area: modelo7;
+.marcascontenedor .marca .marca7 {
+  grid-area: marca7;
 }
-.contenedormarca .modelo .modelo8 {
-  grid-area: modelo8;
+.marcascontenedor .marca .marca8 {
+  grid-area: marca8;
 }
-.contenedormarca .modelo .modelo9 {
-  grid-area: modelo9;
+.marcascontenedor .marca .marca9 {
+  grid-area: marca9;
 }
-.contenedormarca .modelo .modelo10 {
-  grid-area: modelo10;
+.marcascontenedor .marca .marca10 {
+  grid-area: marca10;
 }
-.contenedormarca .modelo .modelo11 {
-  grid-area: modelo11;
+.marcascontenedor .marca .marca11 {
+  grid-area: marca11;
 }
-.contenedormarca .modelo .modelo12 {
-  grid-area: modelo12;
-}
-.contenedormarca .modelo .modelo13 {
-  grid-area: modelo13;
-}
-.contenedormarca .modelo .modelo14 {
-  grid-area: modelo14;
-}
-.contenedormarca .modelo .modelo15 {
-  grid-area: modelo15;
-}
-.contenedormarca .modelo .modelo16 {
-  grid-area: modelo16;
-}
-.contenedormarca .modelo .modelo17 {
-  grid-area: modelo17;
-}
-.contenedormarca .modelo .modelo18 {
-  grid-area: modelo18;
-}
-.contenedormarca .modelo .modelo19 {
-  grid-area: modelo19;
-}
-.contenedormarca .modelo .modelo20 {
-  grid-area: modelo20;
+.marcascontenedor .marca .marca12 {
+  grid-area: marca12;
 }
 @keyframes scale-in-center {
   0% {
@@ -527,11 +504,11 @@ header .navbar li:hover {
   }
 }
 @media screen and (max-width: 640px) {
-  .contenedormarca {
+  .marca {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: "modelo1 modelo2" "modelo3 modelo4" "modelo5 modelo6" "modelo7 modelo8" "modelo9 modelo10" "modelo11 modelo12" "modelo13 modelo14" "modelo15 modelo16" "modelo17 modelo18" "modelo19 modelo20";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "marca1 marca2" "marca3 marca4" "marca5 marca6" "marca7 marca8" "marca9 marca10" "marca11 marca12";
   }
 }
 .descripcionmodelo {
