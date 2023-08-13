@@ -1,102 +1,109 @@
 header{
-    background-color:#355070;
-    justify-content: space-between;
-    display: flex;
-    padding: 0.5rem;
+  background-color:#13262F;
+  justify-content: space-between;
+  display: flex;
+  padding: 0.5rem;
 
-    h1 a{
-        text-decoration: none;
-        color: aliceblue;
-        font-family: 'Merriweather', serif;
-        font-size: 35px;
-    }
+  h1 a{
+      text-decoration: none;
+      color: aliceblue;
+      font-family: 'Merriweather', serif;
+      font-size: 35px;
+  }
 
-    #abrir-menu {
-        display: none;
-    }
-    
-    #cerrar-menu{
-        display: none;
-    }
-    .navbar li{
-        list-style: none;
-        margin: 20px;
-        display: inline-block;
-        color: aliceblue;
-        transition: all 300ms;
-        font-family: Arial, Helvetica, sans-serif;
+  #abrirmenu {
+      display: none;
+  }
+  
+  #cerrarmenu{
+      display: none;
+  }
+  .navbar li{
+      list-style: none;
+      margin: 20px;
+      display: inline-block;
+      color: aliceblue;
+      transition: all 300ms;
+      font-family: Arial, Helvetica, sans-serif;
 
-        & a{
-            text-decoration: none;
-            color: aliceblue;
-            
-            &:hover{
-                color:#CCA43B;
-                transform: scale(1.5);
-               
-               }
-        }
-        
-            &:hover{
-                transform: scale(1.5);
-            }      
-    }  
+      & a{
+          text-decoration: none;
+          color: aliceblue;
+          
+          &:hover{
+              color:#0077B6;
+              transform: scale(1.5);
+             
+             }
+      }
+      
+          &:hover{
+              transform: scale(1.5);
+          }      
+  }  
 }
 
 @media screen and (max-width:960px){
-    header{
-        padding:1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  header{
+      padding:1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+
+      & #abrirmenu{
+          display: block;
        
+          background-color: transparent;
+          color: aliceblue;
+          font-size: 2.5rem;
+          border: 0;
+      }
 
-        & #abrir-menu{
-            display: block;
-            width: 2.5rem;
-            border-radius: 0.5rem;
-        }
+      & #cerrarmenu {
+          display: block;
+          position: absolute;
+          top:1.2rem;
+          right: 1rem;
+          background-color: transparent;
+          color: aliceblue;
+          font-size: 2.5rem;
+          border: 0;
+          
+          }
 
-        & #cerrar-menu {
-            display: block;
-            width: 2.3rem;
-            position: absolute;
-            top:1.2rem;
-            right: 1rem;
-            }
+       & .navbar{
+          display: none;
+          padding-left: 0;
 
-         & .navbar{
-            display: none;
-            padding-left: 0;
+          &.active{
+              display:flex;
+              position:fixed;
+              flex-direction: column;
+              right: 0;
+              top:0;
+              background-color: #242f40;
+              width: 40%;
+              min-height: 100vh;
+              padding-left: 2.5rem;
+              padding-top: 3.5rem;
+              box-shadow: 0 0 0 100vmax rgba(0,0,0,0.2);
+           }
 
-            &.active{
-                display:block;
-                flex-direction: column;
-                position: fixed;
-                right: 0;
-                top:0;
-                background-color: #242f40;
-                width: 40%;
-                min-height: 100vh;
-                padding-left: 2.5rem;
-                padding-top: 3.5rem;
-                box-shadow: 0 0 0 100vmax rgba(0,0,0,0.2);
-             }
-
-            & li:hover{
-                transform:none;
-            } 
-        }   
-    }
-    
+          & li:hover{
+              transform:none;
+          } 
+      }   
+  }
+  
 }
 
 @media screen and (max-width:550px) {
-   
-    h1 a{
-        font-size: 1.5rem;
-    }
-    .navbar.active{
-        padding-left: 1.5rem;
-    }
+ 
+  h1 a{
+      font-size: 1.5rem;
+  }
+  .navbar.active{
+      padding-left: 1.5rem;
+  }
 } 

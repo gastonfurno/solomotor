@@ -88,9 +88,26 @@
 
  @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
 
-@media screen and (max-width:640px){
+ @media screen and (max-width:850px){
+    .marcascontenedor{
+        width: 100%;
 
-    .marca{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+    "marca1 marca2 marca3" 
+    "marca4 marca5 marca6"
+    "marca7 marca8 marca9"
+    "marca10 marca11 marca12"
+    }
+
+}
+
+ @media screen and (max-width:640px){
+    .marcascontenedor{
+        width: 100%;
+
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -102,5 +119,6 @@
     "marca9 marca10"
     "marca11 marca12"
     }
+
 }
 

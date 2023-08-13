@@ -1,10 +1,10 @@
-const openMenu = document.querySelector("#abrir-menu");
-const closeMenu = document.querySelector("#cerrar-menu");
-const navbar = document.querySelector ("#navbar");
+const navbar = document.querySelector("#navbar");
+const abrirmenu = document.querySelector("#abrirmenu");
+const cerrarmenu = document.querySelector ("#cerrarmenu");
 
-openMenu.addEventListener("click", () => {
+abrirmenu.addEventListener("click", () => {
     navbar.classList.add("active");
 })
-closeMenu.addEventListener("click", () => {
+cerrarmenu.addEventListener("click", () => {
     navbar.classList.remove("active");
 })

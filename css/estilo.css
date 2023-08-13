@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: #355070;
+  background-color: #13262F;
   justify-content: space-between;
   display: flex;
   padding: 0.5rem;
@@ -16,10 +16,10 @@ header h1 a {
   font-family: "Merriweather", serif;
   font-size: 35px;
 }
-header #abrir-menu {
+header #abrirmenu {
   display: none;
 }
-header #cerrar-menu {
+header #cerrarmenu {
   display: none;
 }
 header .navbar li {
@@ -35,7 +35,7 @@ header .navbar li a {
   color: aliceblue;
 }
 header .navbar li a:hover {
-  color: #CCA43B;
+  color: #0077B6;
   transform: scale(1.5);
 }
 header .navbar li:hover {
@@ -49,26 +49,31 @@ header .navbar li:hover {
     justify-content: space-between;
     align-items: center;
   }
-  header #abrir-menu {
+  header #abrirmenu {
     display: block;
-    width: 2.5rem;
-    border-radius: 0.5rem;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 2.5rem;
+    border: 0;
   }
-  header #cerrar-menu {
+  header #cerrarmenu {
     display: block;
-    width: 2.3rem;
     position: absolute;
     top: 1.2rem;
     right: 1rem;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 2.5rem;
+    border: 0;
   }
   header .navbar {
     display: none;
     padding-left: 0;
   }
   header .navbar.active {
-    display: block;
-    flex-direction: column;
+    display: flex;
     position: fixed;
+    flex-direction: column;
     right: 0;
     top: 0;
     background-color: #242f40;
@@ -93,7 +98,7 @@ header .navbar li:hover {
 .tituloindex {
   margin-top: 1rem;
   padding: 0.5rem;
-  background-color: #0077B6;
+  background-color: #373F47;
   color: aliceblue;
   text-align: center;
 }
@@ -288,7 +293,7 @@ header .navbar li:hover {
 .footer {
   width: 100%;
   padding: 15px;
-  background-color: #355070;
+  background-color: #13262F;
   color: aliceblue;
   text-align: center;
 }
@@ -325,7 +330,7 @@ header .navbar li:hover {
   padding: 50px;
   margin: 6% auto;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-  background-color: #355070;
+  background-color: #373F47;
   color: azure;
   border-radius: 10px;
 }
@@ -383,7 +388,7 @@ header .navbar li:hover {
   padding: 12px 30px;
   border: transparent;
   border-radius: 10px;
-  background-color: #0077B6;
+  background-color: #8B8982;
   color: azure;
   float: right;
   cursor: pointer;
@@ -503,8 +508,18 @@ header .navbar li:hover {
     opacity: 1;
   }
 }
+@media screen and (max-width: 850px) {
+  .marcascontenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "marca1 marca2 marca3" "marca4 marca5 marca6" "marca7 marca8 marca9" "marca10 marca11 marca12";
+  }
+}
 @media screen and (max-width: 640px) {
-  .marca {
+  .marcascontenedor {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
